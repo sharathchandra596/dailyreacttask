@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid red;
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+    height: 250px;
+}
