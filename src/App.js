@@ -1,6 +1,6 @@
 
 import "./index.css"
-const data=[
+const data = [
   {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -141,13 +141,13 @@ function App() {
 
       </div>
       <div>
-      <ul className="main">
-        {data.filter((fObj)=>{
-          return fObj.id<6;
-        }).map(obj=> <List obj={obj}/>)
-        }
+        <ul className="main">
+          {data.filter((fObj) => {
+            return fObj.id < 6;
+          }).map(obj => <List obj={obj} />)
+          }
 
-      </ul>
+        </ul>
       </div>
 
     </div>
@@ -156,15 +156,20 @@ function App() {
 
 
 
-function List({obj})
-{
-  return(<li>
+function List({ obj }) {
+  if (true) {
+    console.log("hello")
+  }
+
+  return (<li>
     <div className="card">
-    <img src={obj.image} alt="" height={"100px"} width={"150px"}/>
-    <p>{obj.title}</p>
-    <span>{obj.price}</span> <span>{obj.count}</span>
+      <img src={obj.image} alt="" height={"100px"} width={"150px"} />
+      <p>{obj.title}</p>
+      <span>{obj.price}</span> <span>{obj.count}</span>
     </div>
-  </li>)
+  </li>
+  
+  )
 }
 
 
