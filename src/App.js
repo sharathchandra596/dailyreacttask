@@ -1,10 +1,12 @@
+import Controleform1 from "./Controleform1";
+
+
 
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    
+    <Controleform1/>
   );
 }
 
