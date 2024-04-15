@@ -1,4 +1,4 @@
-import Controleform1 from "./Controleform1";
+
 
 
 
@@ -6,7 +6,7 @@ import Controleform1 from "./Controleform1";
 function App() {
   return (
     
-    <Controleform1/>
+    <h1>task15/04</h1>
   );
 }
 
